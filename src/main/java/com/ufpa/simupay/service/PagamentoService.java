@@ -45,7 +45,7 @@ public class PagamentoService {
             aprovado = true;
             pagamento.setStatusPagamento("APROVADO");
 
-        }else if (request.getMetodo().equalsIgnoreCase("Cartão")){
+        }else if (request.getMetodo().equalsIgnoreCase("CARTAO")){
             // A Regra é clara(inventada): Se o cartão começa com 5555 então passa
             if (request.getNumeroCartao() != null && request.getNumeroCartao().startsWith("5555")){
                 aprovado = true;

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController //mostra que essa classe responde requisições da internet
-@RequestMapping("/pagamento")//oendereço base da API
+@RequestMapping("/pagamentos")//oendereço base da API
 public class PagamentoController {
     
     private final PagamentoService pagamentoService;

@@ -1,0 +1,19 @@
+### Teste 1: Cartão Aprovado (Começa com 5555)
+POST http://localhost:8080/pagamentos/checkout
+Content-Type: application/json
+
+{
+  "pedidoId": 1,
+  "metodo": "CARTAO",
+  "numeroCartao": "5555123498761111"
+}
+
+### Teste 2: Cartão Recusado (Sem limite)
+POST http://localhost:8080/pagamentos/checkout
+Content-Type: application/json
+
+{
+  "pedidoId": 2,
+  "metodo": "CARTAO",
+  "numeroCartao": "1234000000000000"
+}
