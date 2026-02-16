@@ -69,4 +69,11 @@ public class PagamentoService {
             return "Falha! pagamento não aprovado";
         }
     }
+
+    public Pedido consutarPedido(Long id){
+
+        Pedido pedido = pedidoRepository.buscarPorId(id).orElseThrow(() -> new RuntimeException("Pedido não encontrado"));
+
+        return pedido;
+    }
 }

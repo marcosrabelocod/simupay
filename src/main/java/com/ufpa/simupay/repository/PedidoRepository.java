@@ -35,7 +35,7 @@ public class PedidoRepository {
         jdbcTemplate.update(sql, novoStatus, id);
     }
 
-    // --- O Tradutor ---
+    // O Tradutor, ira pegar o retorno do banco de dados, e o transfomra nas classes que definimos para pedidos
     private static class PedidoRowMapper implements RowMapper<Pedido> {
         @Override
         public Pedido mapRow(ResultSet rs, int rowNum) throws SQLException {
