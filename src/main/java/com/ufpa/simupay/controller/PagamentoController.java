@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController //mostra que essa classe responde requisições da internet
 @RequestMapping("/pagamentos")//oendereço base da API
+@CrossOrigin(origins = "http://localhost:4200")
 public class PagamentoController {
     
     private final PagamentoService pagamentoService;
