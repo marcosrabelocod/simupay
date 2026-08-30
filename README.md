@@ -1,6 +1,6 @@
 # 🛒 Simupay API - Simulador de Checkout e Pagamentos
 
-O **Simupay** é uma API RESTful desenvolvida em Java com Spring Boot que simula o fluxo de checkout e o processamento de pagamentos de um e-commerce. Projetada com foco em arquitetura e controle de dados, a aplicação utiliza **Spring JDBC Template** para executar consultas SQL puras em um banco de dados PostgreSQL, dispensando o uso de ORMs tradicionais. O sistema processa transações simuladas (PIX e Cartão de Crédito), aplica regras de negócio críticas — como a prevenção de cobranças duplicadas — e garante a integridade financeira das operações utilizando princípios ACID através do controle transacional.
+O **Simupay** é uma API RESTful para arquitetura de microserviços desenvolvida em Java com Spring Boot que simula o fluxo de checkout e o processamento de pagamentos de um e-commerce. Projetada com foco em arquitetura e controle de dados, a aplicação utiliza **Spring JDBC Template** para executar consultas SQL puras em um banco de dados PostgreSQL, dispensando o uso de ORMs tradicionais. O sistema processa transações simuladas (PIX e Cartão de Crédito), aplica regras de negócio críticas — como a prevenção de cobranças duplicadas — e garante a integridade financeira das operações utilizando princípios ACID através do controle transacional.
 
 ## 🚀 Tecnologias Utilizadas
 
