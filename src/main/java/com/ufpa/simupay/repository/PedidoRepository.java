@@ -1,5 +1,7 @@
 package com.ufpa.simupay.repository;
 
+import java.util.List;
+import java.util.Collections;
 import com.ufpa.simupay.model.Pedido;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -26,6 +28,15 @@ public class PedidoRepository {
             return Optional.ofNullable(pedido);
         } catch (Exception e) {
             return Optional.empty(); // Se o cara tentar pagar o pedido 999 que não existe, não quebra a API
+        }
+    }
+    public List<Pedido> buscaGeral() {
+        String sql = "SELECT * FROM tb_pedido";
+        try {
+            return jdbcTemplate.query(sql, new PedidoRowMapper()); // Corrigido o 'j'
+        } catch (Exception e) { // Corrigido para Exception
+            System.err.println("Erro ao buscar pedidos: " + e.getMessage());
+            return Collections.emptyList();
         }
     }
 

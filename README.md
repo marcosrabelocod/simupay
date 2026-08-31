@@ -49,6 +49,7 @@ spring.datasource.password=sua_senha_aqui
 
 ##################################################################################################################################
 3. Rodando a Aplicação
+incie no consloe com =  bash mvnw spring-boot:run
 Inicie a aplicação executando a classe SimupayApplication.java. O servidor iniciará na porta 8080.
 
 🔗 Endpoints da API

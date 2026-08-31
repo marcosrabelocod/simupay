@@ -1,5 +1,6 @@
 package com.ufpa.simupay.service;
 
+import java.util.List;
 import com.ufpa.simupay.model.CheckoutRequestDTO;
 import com.ufpa.simupay.model.Pagamento;
 import com.ufpa.simupay.model.Pedido;
@@ -75,5 +76,9 @@ public class PagamentoService {
         Pedido pedido = pedidoRepository.buscarPorId(id).orElseThrow(() -> new RuntimeException("Pedido não encontrado"));
 
         return pedido;
+    }
+
+    public List<Pedido> buscaGeral() {
+        return pedidoRepository.buscaGeral(); // Repassa a chamada para o Repository
     }
 }
